@@ -38,6 +38,8 @@ const checkWeather = async function () {
   } else if (data.weather[0].main == "Haze") {
     weatherImg.src = "weather_Svg/cloudy.svg";
   }
+
+  searchBox.value = "";
 };
 
 searchBtn.addEventListener("click", checkWeather);
