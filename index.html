@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather_Info</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search by City Name"
+          class="search-box"
+          autofocus
+        />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="temprature-container">
+        <div class="temprature-box">
+          <div class="temprature">
+            <img src="weather_Svg/cloudy-day-1.svg" class="weather-img" />
+            <h3 class="temprature-title">12</h3>
+          </div>
+
+          <h2 class="city">New York</h2>
+        </div>
+
+        <div class="temprature-condition">
+          <div class="conditon" id="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="temp--desc">
+              <h4 class="humidity">84%</h4>
+              <p class="desc-name">Humidity</p>
+            </div>
+          </div>
+          <div class="conditon" id="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="temp--desc">
+              <h4 class="wind">25 Km/h</h4>
+              <p class="desc-name">Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

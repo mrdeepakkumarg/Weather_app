@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.container .search {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container .search input {
+  width: 13rem;
+  font-size: 1rem;
+}
+
+.container .search input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  margin-right: 0.5rem;
+}
+
+.search-btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.temprature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temprature {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.temprature img {
+  width: 7rem;
+}
+
+.temprature-title::after {
+  content: " ℃";
+  font-size: 1.5rem;
+}
+
+.city {
+  font: 2.5rem "san-serif";
+  font-weight: 600;
+  text-align: center;
+}
+
+.temprature-condition {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.conditon {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.conditon i {
+  font-size: 1.5rem;
+}
+
+.desc-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
